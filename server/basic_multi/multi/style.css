@@ -1,0 +1,63 @@
+@charset "utf-8";
+#multi_upload { min-height:115px; }
+#multi_upload input[type=file] { display: none; }
+#multi_upload button { cursor:pointer;  outline:none; }
+#multi_upload select { padding:8px 10px; border-radius:5px; color:#fff; background:#555; outline:none; cursor:pointer; }
+#multi_upload select:hover  { transition:all 0.5s; background-color: #dd6666;  } 
+#multi_upload .my_button { display:inline-block; width:100px; text-align: center; padding:8px; border:0px; color:#fff; border-radius:5px; }
+#multi_upload .my_button:hover { transition:all 0.5s; background-color: #dd6666;  }
+#multi_upload .img_add { background-color: #006BCC; }
+#multi_upload .img_empty { background-color: #006BCC; }
+#multi_upload .img_send { background-color: #555555;  }
+#multi_upload .input_wrap { margin-bottom:10px; }
+#multi_upload .input_wrap:after {display:block;visibility:hidden;clear:both;content:""}
+#multi_upload .image_info { margin-bottom:5px; padding-left:3px; }
+#multi_upload .image_info span { color:red; }
+
+/* 이미지 업로드 대기 박스 */
+#multi_upload .imgs_wrap { list-style-type: none; overflow:hidden; width:100%; border: 2px solid #dd6666; margin:0px 0px 20px 0px; padding:20px 10px 10px 10px; min-height:150px; }
+#multi_upload .imgs_wrap li { display:inline-block; margin-right:10px; width:150px; overflow:hidden; padding:0px; height:100px; margin-bottom:8px; }
+#multi_upload .imgs_wrap li:hover { outline:3px solid #FF4A4A; } 
+#multi_upload .imgs_wrap img { max-width: 150px; margin:-20px 0px 0px 0px; cursor:pointer; }
+#multi_upload .ui-state-default { border:0px; background:none; }
+#multi_upload .del_btn { position:relative; width:25px; height:20px; line-height:20px; background:#ccc; text-align:center; top:10px; left:120px; font-size:11px; font-weight:bold; cursor:pointer; border-radius:5px; color:#fff; opacity:0.4; }
+#multi_upload .del_btn:hover { background:#dd6666; opacity:1;}
+
+/* 저장된 이미지 */
+#multi_upload .image_view { list-style-type: none; overflow:hidden; width:100%; border: 2px solid #dd6666; margin:0px 0px 20px 0px; padding:10px 10px 0px 10px; min-height:40px; border-radius:5px; }
+#multi_upload .image_view li  { display:inline-block; margin:0px 10px 8px 0px; width:150px; overflow:hidden; padding:0px; height:100px; border-radius:5px; }
+#multi_upload .image_view li:hover { outline:3px solid #FF4A4A; border-radius:0px; } 
+#multi_upload .image_view img { width: 150px; margin:-20px 0px 0px 0px; cursor:pointer; }
+#multi_upload .pic_d { position:relative; width:25px; height:20px; line-height:20px; background:#ccc; text-align:center; top:10px; left:120px; font-size:11px; font-weight:bold; cursor:pointer; border-radius:5px; color:#fff; opacity:0.4; }
+#multi_upload .pic_dN { position:relative; width:25px; height:20px; line-height:20px; top:10px; left:120px; font-size:11px; }
+#multi_upload .pic_d:hover { background:#dd6666; opacity:1;}
+#multi_upload .pic_list { display:inline-block; background:#555555; min-width:100px; text-align:center; padding:8px; border:0px; color:#fff; border-radius:5px; }
+#multi_upload .pic_list:hover { transition:all 0.5s; background-color: #dd6666;  }
+#multi_upload .dlink { cursor:pointer; color:red; }
+
+/* 파일업로드 프로그레스(업로드 상태바) */
+#status_progress { width:100%; margin:0px 0px 5px 0px; }
+#status_progress progress { _margin-right:20px; width:100%; padding-left:3px; height:30px; vertical-align:middle;}
+#status_progress span { display:inline-block; position:relative; top:-20px; text-align:center; margin-right:20px; color:red; height:11px; line-height:10px; font-weight:bold; }
+#status { float:left; padding-left:20px; }
+#loaded_n_total {float:right;  padding-right:0px; }
+
+/* 파일선택시 파일 확장자만 표시 */
+#multi_upload .no_image { text-align:center; line-height:40px; font-size:20px; font-weight:bold; width:100%; height:40px; background:#dd6666; color:#fff; margin-top:-20px;}
+#multi_upload .no_filename { display:inline-block; width:100%; height:100px; color:#fff; background:#dd6666; padding:0px 8px 0px 8px; } 
+
+
+/* table css */
+#board_table { width:100%; margin:auto; margin:0px 0 0 0; }
+#board_table table { width:100%; border-spacing:0; border-collapse:collapse; }
+#board_table th { font-size:12px; height:40px; text-align:center; background:#eeeeee; border:1px solid #cccccc; padding:0px; }
+#board_table td { font-size:12px; height:40px; text-align:center; background:#ffffff; border:1px solid #cccccc; padding:0px; }
+#board_table caption { text-align:left; padding:0px 0px 5px 0px; }
+#board_table input[type="text"] { border:0px; font-size:12px; background:#ffffff; width:100%; height:100% !important; padding:0px 7px; text-align:center; }
+#board_table input[type="text"]:focus { transition:all 0.8s; background:#F1D3D3; }
+#board_table button { padding:4px 8px; outline:none; }
+#board_table button:hover { background:#dd6666; color:#fff; border:2px solid #dd6666; }
+#board_table .bottom_btn { width:100%; padding:15px; text-align:center; }
+#board_table .save { background:#555555; padding:10px 20px; border-radius:3px; border:0px; font-size:14px; color:#fff;}
+#board_table .save:hover{ transition:all 0.8s; background:#dd6666; border:0px; }
+#board_table .td_right { text-align:right; padding-right:15px; }
